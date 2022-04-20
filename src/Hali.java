@@ -5,7 +5,7 @@ public class Hali {
     }
 
     public Hali(double fiyat) {
-        this.fiyat = fiyat;
+        this.setFiyat(fiyat);
     }
 
     public double getFiyat() {

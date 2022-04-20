@@ -7,8 +7,8 @@ public class Zemin {
     }
 
     public Zemin(double uzunluk, double genislik) {
-        this.uzunluk = uzunluk;
-        this.genislik = genislik;
+        this.setUzunluk(uzunluk);
+        this.setGenislik(genislik);
     }
 
     public String getAciklama() {
