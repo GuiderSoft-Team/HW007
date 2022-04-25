@@ -5,7 +5,8 @@ public class Hesap {
     public Hesap(Zemin zemin, Hali hali) {
         this.zemin = zemin;
         this.hali = hali;
-    } public Hesap() {
+    }
+    public Hesap() {
     }
 
     public Zemin getZemin() {

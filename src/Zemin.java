@@ -5,8 +5,8 @@ public class Zemin { private String aciklama;
 
     public Zemin(String aciklama, double genislik, double uzunluk) {
         this.aciklama = aciklama;
-        this.genislik = genislik <= 0 ? 0 : genislik;
-        this.uzunluk = uzunluk <= 0 ? 0 : uzunluk;
+        this.genislik = genislik ;
+        this.uzunluk = uzunluk ;
     }
 
 
@@ -23,7 +23,10 @@ public class Zemin { private String aciklama;
     }
 
     public void setGenislik(double genislik) {
-        this.genislik = genislik;
+        if (genislik>0) {
+            this.genislik = genislik ;
+        }
+
     }
 
     public double getUzunluk() {
@@ -31,7 +34,10 @@ public class Zemin { private String aciklama;
     }
 
     public void setUzunluk(double uzunluk) {
-        this.uzunluk = uzunluk;
+        if (uzunluk >0) {
+            this.uzunluk=uzunluk;
+        }
+
     }
 
     public double alanHesapla() {
@@ -40,7 +46,7 @@ public class Zemin { private String aciklama;
 
     @Override
     public String toString() {
-        return String.format("%s (%.2f x %.2f)",aciklama,genislik,uzunluk);
+        return String.format(aciklama,genislik,uzunluk);
     }
 
 }
