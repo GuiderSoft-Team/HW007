@@ -10,8 +10,9 @@ public class Hali {
         if (price<0)
         {
             this.price=0;
+        }else {
+            this.price = price;
         }
-        this.price = price;
     }
 
     public double getPrice() {

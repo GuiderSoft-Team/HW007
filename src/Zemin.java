@@ -1,7 +1,7 @@
 public class Zemin {
-private String statement;
-private double width;
-private double height;
+    private String statement;
+    private double width;
+    private double height;
 
     public Zemin(double width, double height) {
         setWidth(width);
@@ -21,11 +21,11 @@ private double height;
     }
 
     public void setWidth(double width) {
-        if (width<0)
-        {
-            this.width=0;
+        if (width < 0) {
+            this.width = 0;
+        } else {
+            this.width = width;
         }
-        this.width = width;
     }
 
     public double getHeight() {
@@ -33,22 +33,22 @@ private double height;
     }
 
     public void setHeight(double height) {
-        if(height<0)
-        {
-            this.height=0;
+
+        if (height < 0) {
+            this.height = 0;
+        } else {
+            this.height = height;
         }
-        this.height = height;
     }
 
-    double calculateArea()
-    {
-        return this.width*this.height;
+    double calculateArea() {
+        return this.width * this.height;
     }
 
     @Override
     public String toString() {
 
-        return getStatement()+" alan:"+calculateArea();
+        return getStatement() + " alan:" + calculateArea();
     }
 }
 
